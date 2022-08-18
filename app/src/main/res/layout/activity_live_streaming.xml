@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,15 +10,16 @@
     tools:context=".LiveStreamingActivity">
 
     <LinearLayout
-        android:layout_marginTop="47dp"
+        android:layout_marginTop="20dp"
         android:layout_marginLeft="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <ImageView
             android:id="@+id/img_back_livestreaming"
             android:src="@drawable/icon_back"
-            android:layout_width="14dp"
-            android:layout_height="28dp"/>
+            android:padding="5dp"
+            android:layout_width="24dp"
+            android:layout_height="38dp"/>
         <TextView
             android:layout_weight="1"
             android:text="Livestreaming"
@@ -26,44 +28,48 @@
             android:textSize="24dp"
             android:textStyle="bold"
             android:textColor="@color/white"
-            android:layout_marginRight="29dp"
+            android:layout_marginRight="39dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
+
     </LinearLayout>
-    <LinearLayout
-        android:layout_marginTop="41dp"
-        android:orientation="horizontal"
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_marginTop="50dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <ImageView
             android:id="@+id/img_facebook_livestreaming"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginLeft="10dp"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
             android:layout_gravity="center"
-            android:src="@drawable/bg_facebook"
-            android:layout_width="189dp"
-            android:layout_height="189dp"/>
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/bg_facebook" />
+
         <ImageView
             android:id="@+id/img_twitch_livestreaming"
-            android:layout_gravity="center"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"
-            android:layout_marginRight="10dp"
-            android:src="@drawable/bg_twitch"
-            android:layout_width="189dp"
-            android:layout_height="189dp"/>
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/img_facebook_livestreaming"
+            android:src="@drawable/bg_twitch" />
+
         <ImageView
             android:id="@+id/img_youtube_livestreaming"
-            android:layout_margin="10dp"
-            android:src="@drawable/bg_youtube"
-            android:layout_width="189dp"
-            android:layout_height="189dp"/>
-    </LinearLayout>
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_below="@id/img_facebook_livestreaming"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/bg_youtube" />
+    </RelativeLayout>
 </LinearLayout>

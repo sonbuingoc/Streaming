@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Streaming</string>
+    <string name="description_fb_live">Get the facebook livestream URL and start livestreaming at the RTMP URL page. The livestream URL can be saved in the RTMP page. After settingthe livecode, you can use it all the time unless you change it.</string>
+    <string name="continue_">Continue</string>
+    <string name="paste">Paste</string>
+    <string name="start_livestreming">Start Livestreaming</string>
+    <string name="enter_key">Please enter stream key here.</string>
 </resources>
