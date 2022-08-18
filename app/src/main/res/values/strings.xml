@@ -5,4 +5,7 @@
     <string name="paste">Paste</string>
     <string name="start_livestreming">Start Livestreaming</string>
     <string name="enter_key">Please enter stream key here.</string>
+    <string name="new_">New</string>
+    <string name="save_to_gallery">Saved to gallery</string>
+    <string name="share">Share</string>
 </resources>
